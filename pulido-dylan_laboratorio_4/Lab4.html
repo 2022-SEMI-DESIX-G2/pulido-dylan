@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+
+        <style>    
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 2%;
+          height: 5%;
+          padding: 2px 16px;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .container {
+          padding: 2px 16px;
+        }
+        </style>
+    </head>   
+<body>
+
+
+
+
+<p>Ingrese un numero entero:</p>
+<input type="number" id="numero" name="numero"><br><br>
+
+
+<button onclick="myFunction()">Ingresar</button>
+
+
+<input type="button" value="Borrar todo" onclick="location.reload()"/>
+
+    
+<div>
+
+
+
+
+    
+ 
+<script>
+  function myFunction()
+    {
+
+        
+  //consigue el numero
+  var n = document.getElementById("numero").value;
+  var numv = 0;
+  var numn = 1;
+  var r=0;
+
+
+        for(i=0;i<n;i++)
+            {
+            //crea la carta
+            let newDiv = document.createElement('div');
+            newDiv.setAttribute("id",i);
+            newDiv.setAttribute("class","card");   
+            newDiv.setAttribute("onclick","borrar(this.id)");   
+            //pone el numero a la carta
+            let p = document.createElement('p');
+                p.textContent = "\n"+i+"\n";
+                newDiv.appendChild(p);
+
+            document.body.appendChild(newDiv);
+                if(i==1)
+                {
+                 i=n+1;
+                    
+                }
+            }
+
+
+            for(i=2;i<n;i++)
+            {
+
+            //fubanoci
+            r=numv+numn;    
+            numv=numn;    
+            numn=r;  
+
+
+            //crea la carta
+            let newDiv = document.createElement('div');
+            newDiv.setAttribute("id",r);
+            newDiv.setAttribute("class","card");
+            newDiv.setAttribute("onclick","borrar(this.id)");
+
+            //Pone el numero en la carta
+            let p = document.createElement('p');
+                p.textContent = "\n"+r+"\n";
+                newDiv.appendChild(p);
+
+            document.body.appendChild(newDiv);
+            }
+    }
+    function borrar(clicked_id)
+    {   
+        
+        var mensaje = confirm("Deseas borrar "+clicked_id);
+
+            //Mensaje para borrar elemento
+        if (mensaje) {
+            const elmnt = document.getElementById(clicked_id); elmnt.remove();
+            }
+            //Si no borra no pasa nada
+            else {
+            }
+         
+        }
+
+
+</script>
+
+
+</body>
+</html>
