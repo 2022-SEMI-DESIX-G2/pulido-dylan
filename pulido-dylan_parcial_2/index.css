@@ -1,0 +1,113 @@
+*{
+   
+    margin:0px;
+    padding:0px;
+}
+
+#tittle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+#tittle2{
+    padding-top: 30px;
+    font-family: Arial black;
+    font-size:25px;
+    text-align: left;
+    
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+#finderTable td {
+     padding:0 10px 0 0; /* Only right padding*/ 
+}
+
+#responseTable td{
+    padding:0 110px 0 0;
+}
+/*top, right, botton,left*/
+
+.buttons{
+    background-color: #19a5f8;
+    color: white;
+    width: 100px;
+    height: 25px;
+    border-radius: 8%;
+    border: none;
+    cursor: pointer;
+}
+
+
+#pokemon-finder-query{
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 8%;
+    width: 180px;
+    height: 20px;
+}
+
+#pokemon-finder-search-type{
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 8%;
+    width: 180px;
+    height: 20px;
+}
+
+#body{
+    background-color: black;
+}
+
+#logoSection{
+    margin: auto;
+    margin-left: auto;
+    width:1360px;
+    background-color:#22142b;
+    align-content: center;
+}
+
+#logo{    
+    position: absolute;
+    left: 800px;
+   }
+
+#general{
+    
+    margin: auto;
+    padding-top: 70px;
+    width:1360px;
+    height: 960px;
+    background-color:#22142b;
+}
+
+#pokemon-finder-form{
+    
+    margin: auto;
+    background-color: white;
+    width: 450px;
+    height: 220px;
+    border-radius: 10px;
+    padding-left: 80px;
+          
+}
+#pokemon-finder-response{
+   
+
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    width: 450px;
+    height:fit-content;
+    border-radius: 10px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    
+    
+    
+
+}
