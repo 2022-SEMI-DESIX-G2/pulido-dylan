@@ -1,0 +1,17 @@
+{
+  "name": "pulido-dylan_laboratorio_6",
+  "version": "0.0.1",
+  "description": "Lab6",
+  "main": "lab6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ping": "ping 8.8.8.8",
+    "lab": "node lab6.js",
+    "prod": "npm run ping && npm run lab"
+  },
+  "author": "Dylan Pulido",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
